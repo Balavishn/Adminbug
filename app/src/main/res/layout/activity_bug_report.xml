@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Bug_report">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Bug Report"
+
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#2196F3"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            android:layout_margin="10dp"
+            app:counterMaxLength="30">
+
+            <EditText
+                android:id="@+id/bug1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Bug Type"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            android:layout_margin="10dp"
+            app:counterMaxLength="30">
+
+            <EditText
+                android:id="@+id/bug2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Bug Details"
+                android:inputType="textMultiLine"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/uploadproof"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Upload proof"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+
+                <ImageButton
+                    android:id="@+id/getimage"
+                    android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_cloud_upload_24"
+                android:background="#2196F3"
+
+                />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/click"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_baseline_check_circle_24"
+                    android:background="#2196F3"
+                    />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/click2"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_baseline_cancel_24"
+                    android:background="#2196F3"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/uploadd"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/back3"
+                android:gravity="center"
+                android:text="Upload"
+                android:textColor="#2196F3"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
